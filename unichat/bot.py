@@ -18,7 +18,7 @@ def tmp_file(name_suffix):
     temp_file.close
 
 class Bot(object):
-    def __init__(self, token, channelName, googleApikey):
+    def __init__(self, token, channelName):
         self.channelName = channelName
         self.slackClient = UniChatSlackClient(token)
         self.wechatGroup = None
